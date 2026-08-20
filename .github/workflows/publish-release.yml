@@ -21,7 +21,7 @@ jobs:
         run: |
           set -euo pipefail
           version="$(jq -r '.version' latest.json)"
-          artifact="$(find . -maxdepth 1 -type f -name 'ONEhub_*_x64-setup.exe' -print -quit)"
+          artifact="$(jq -r '.platforms["windows-x86_64"].url | split("/") | last' latest.json)"
           if [[ -z "$version" || "$version" == "null" || -z "$artifact" || ! -f "$artifact.sig" ]]; then
             echo "Update manifest, installer, or signature is missing." >&2
             exit 1

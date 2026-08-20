@@ -1,0 +1,47 @@
+name: Publish update release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - latest.json
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read update metadata
+        id: metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="$(jq -r '.version' latest.json)"
+          artifact="$(find . -maxdepth 1 -type f -name 'ONEhub_*_x64-setup.exe' -print -quit)"
+          if [[ -z "$version" || "$version" == "null" || -z "$artifact" || ! -f "$artifact.sig" ]]; then
+            echo "Update manifest, installer, or signature is missing." >&2
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "artifact=${artifact#./}" >> "$GITHUB_OUTPUT"
+
+      - name: Create public release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.metadata.outputs.version }}
+          ARTIFACT: ${{ steps.metadata.outputs.artifact }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="app-v$VERSION"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$ARTIFACT" "$ARTIFACT.sig" latest.json --clobber
+          else
+            gh release create "$tag" "$ARTIFACT" "$ARTIFACT.sig" latest.json \
+              --title "ONEhub v$VERSION" \
+              --notes "Signed ONEhub Desktop update $VERSION."
+          fi

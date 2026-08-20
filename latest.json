@@ -1,0 +1,11 @@
+{
+  "version": "0.2.2",
+  "notes": "ONEhub Desktop 0.2.2 adds a persistent Home button to Workspace.",
+  "pub_date": "2026-08-20T01:50:10Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVE41TlpWMmMyVVNFVUdlTE1FOUVRWml1VWlMVzFpM2RHdHJwakorWWhtY1gxckh6elI1bWVyYmJxSDR6cllUSEFDRDRjMEFPOS9FdGJRdVRnL2xTNkM2aUllNnpCd1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg3MTkwNDE1CWZpbGU6T05FaHViXzAuMi4yX3g2NC1zZXR1cC5leGUKWGRLa0wxZEpoYlZ2S0ZLWEVHNUUvYnBVaXhDMExLNVVYYzJhYmpTWHZzSkZkeTNjRmRvUnkrY2M1SDNYZ05MQXFqdDFHRzZ5WHB4bFdmeXhSbURuRHc9PQo=",
+      "url": "https://raw.githubusercontent.com/LBTown85/onehub-desktop-updates/main/ONEhub_0.2.2_x64-setup.exe"
+    }
+  }
+}

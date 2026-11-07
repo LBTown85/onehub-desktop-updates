@@ -1,11 +1,11 @@
 {
-  "version": "0.3.0",
-  "notes": "ONEhub Desktop 0.3.0.",
-  "pub_date": "2026-11-07T01:03:00Z",
+  "version": "0.4.0",
+  "notes": "ONEhub Desktop 0.4.0.",
+  "pub_date": "2026-11-07T02:59:50Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVE41TlpWMmMyVVg5czhYY1ZaQ3cyekpJbHRIZEJhekU5TjJjci8vL0c2MVFydXJYWStSVTB1ZzAxMlFQQW80cGUxc3BtcitDdmRvbmh4VDZ1dVpDQVgxRStxZzNwQndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDEzMzE5CWZpbGU6T05FaHViXzAuMy4wX3g2NC1zZXR1cC5leGUKcEJFVWhmMklscGZaY2tlYy9kL29WNWRoWlpPZ242ZUgydkI4U2ZTelNJRHRJaEtscXF5ZTVaWVJ3ZjlycmVacXJXR3p4c3JnWHpIR1U0OGQ2SkNYQ1E9PQo=",
-      "url": "https://portal.squareonemedia.us/desktop/ONEhub_0.3.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUVE41TlpWMmMyVVY1QUZ6cUhIQ2lRYVJMdDB0ek94WWsxbGFhWUtMaEMxdjB2WE01blI1VkphMm9PVk0ybjl6SytGbHBvTmlDSEhGVHdlc1lVTlFsVTVXWTYwOUU2TmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MDIwMzQ1CWZpbGU6T05FaHViXzAuNC4wX3g2NC1zZXR1cC5leGUKanhiOEtMSDNKZVhkOEt4cXZsblQ2RlpBZWhvNFVUcGRyMldjMjg3cHZ0NHpyOFkvc3hndk5laE1SVnVTK2tLbW5wOXRFZWdZWkxsSlprVk9VWnJqQWc9PQo=",
+      "url": "https://portal.squareonemedia.us/desktop/ONEhub_0.4.0_x64-setup.exe"
     }
   }
 }
